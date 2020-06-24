@@ -1,0 +1,16 @@
+/* CSS Document */
+.bfcl{
+	background-color: lightgoldenrodyellow;
+}
+div{
+	text-align: center;
+	text-decoration: none;
+}
+h3{
+	font-family:清松手写体1;
+	font-size: 30px;
+}
+@font-face{
+	font-family:清松手写体1;
+	src: url(/font/清松手写体-100font.com/清松手写体1.ttf)
+}

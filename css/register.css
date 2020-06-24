@@ -1,0 +1,10 @@
+/*CSS document*/
+form{
+    margin-top: 100px;
+    border: 100px;
+    border-color: coral;
+}
+label{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
