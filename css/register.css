@@ -1,10 +1,44 @@
 /*CSS document*/
+@font-face{
+    font-family:ziti;
+    src: url(/font/新叶恋体-100font.com/新叶念体.otf);
+}
+
+body{
+    font-family: ziti;
+    font-size: x-large;
+}
+
 form{
     margin-top: 100px;
     border: 100px;
     border-color: coral;
 }
-label{
-	margin-top: 10px;
-	margin-bottom: 10px;
+
+/*表单输入框样式更改*/
+input{
+    outline: none;
+    border-radius: 10px;
+}
+
+/*input必填和非必填提示*/
+input:disabled{
+    border: 1.5px solid darkgrey;
+}
+
+input:required{
+    border: 1.5px solid red;
+}
+
+input:optional{
+    border: 1.5px solid lightgreen;
+}
+
+/*表单项输入验证*/
+input:valid{
+    background-color: yellowgreen;
+}
+
+input:invalid{
+    background-color: red;
 }

@@ -8,28 +8,29 @@
 </head>
 <body>
     <div align="center">
-    <form style="width: 23%; height: 36%;" action="../php/houtai.php" method="POST"><!--表单标签-->
+    <form style="width: 23%; height: 36%; outline: none; border-style: solid1;" action="../php/houtai.php" method="POST"><!--表单标签-->
         <fieldset><!--表单设置-->
             <legend>Register/注册</legend><!--大表单题目-->
-            <label for="name">UserName</label>
-            <input id="name" type="text" name="user[]" pattern="[A-z，1-9]{5}" title="用户名为5位，由A-z组成" placeholder="请输入用户名" required>
+            <input style="text-align: center;" id="name" type="text" name="user[]" pattern="[A-z，1-9]{5}" title="用户名为5位，由A-z组成" placeholder="请输入用户名" required>
+            <hr>
+            <input style="text-align: center;" id="passwd" type="password" name="password[]" title="请输入乱序且带数字和英文字母/符号的密码，以保证安全性" placeholder="请输入密码" required>
             <br/>
             <hr/>
-            <label for="passwd">PassWord</label>
-            <input id="passwd" type="password" name="password[]" title="请输入乱序且带数字和英文字母/符号的密码，以保证安全性" placeholder="请输入密码" required>
+            <input style="text-align: center;" id="email" type="email" name="email[]" title="如：123456789@qq.com" placeholder="请输入电子邮箱" required>
             <br/>
             <hr/>
-            <label for="emali">Emali</label>
-            <input id="email" type="email" name="email[]" title="如：123456789@qq.com" placeholder="请输入电子邮箱" required>
+            <input style="text-align: center;" id="telnumber" type="Tel" name="telnumber[]" placeholder="请输入电话号码(选填)" >
             <br/>
             <hr/>
-            <label for="telnumber">Tel Number</label>
-            <input id="telnumber" type="Tel" name="telnumber[]" placeholder="请输入电话号码" required>
+            <input style="text-align: center;" id="disable" placeholder="此项为时间，无需填写" disabled required>
             <br/>
             <hr/>
             <button style="margin-top: 10px; margin-bottom: 10px;" type="submit">提交注册</button>
             <hr/>
-            <input type="datetime-local">
+            <label for="girl">女</label>
+            <input type="radio" name="gril[]" id="girl" checked>
+            <label for="boy">男</label>
+            <input type="radio" name="boy[]" id="boy" >
         </fieldset>
     </form>
     </div>
