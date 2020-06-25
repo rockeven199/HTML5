@@ -4,41 +4,47 @@
     src: url(/font/新叶恋体-100font.com/新叶念体.otf);
 }
 
+/*主背景设置*/
 body{
+    background:-webkit-linear-gradient(left,#FA8BFF,#2BD2FF,#2BFF88);
+    margin-top: 170px;
     font-family: ziti;
-    font-size: x-large;
+    font-size: 30px；
 }
 
+/*表单样式更改*/
 form{
     margin-top: 100px;
-    border: 100px;
-    border-color: coral;
+    border: none;
+    outline: none;
 }
 
-/*表单输入框样式更改*/
+form:first-child{
+    font-family: none;
+    font-size: 25px;
+}
+
+/*单输入框样式更改*/
 input{
     outline: none;
-    border-radius: 10px;
+    box-shadow: 3px 6px 3px;
+    border: 1.5px solid #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    font-family: ziti;
+    font-size: 14px;
+    height: 26px;
 }
 
 /*input必填和非必填提示*/
 input:disabled{
-    border: 1.5px solid darkgrey;
+    background-color: #C3C7C0;
 }
-
-input:required{
-    border: 1.5px solid red;
-}
-
-input:optional{
-    border: 1.5px solid lightgreen;
-}
-
 /*表单项输入验证*/
 input:valid{
-    background-color: yellowgreen;
+    background-color: #88FF88;
 }
 
 input:invalid{
-    background-color: red;
+    background-color: #FF9999;
 }
