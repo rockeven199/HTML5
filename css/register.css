@@ -32,12 +32,12 @@ input{
     border-radius: 30px;
     text-align: center;
     font-family: ziti;
-    font-size: 14px;
+    font-size: 20px;
     height: 26px;
 }
 
 /*input必填和非必填提示*/
-input:disabled{
+input:read-only{
     background-color: #C3C7C0;
 }
 /*表单项输入验证*/
