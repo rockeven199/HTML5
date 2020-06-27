@@ -6,7 +6,9 @@
 
 /*主背景设置*/
 body{
-    background:-webkit-linear-gradient(left,#FA8BFF,#2BD2FF,#2BFF88);
+    background: -webkit-linear-gradient(left,#FA8BFF,#2BD2FF,#2BFF88);
+    background: -moz-linear-gradient(left,#FA8BFF,#2BD2FF,#2BFF88);
+    background: -o-linear-gradient(left,#FA8BFF,#2BD2FF,#2BFF88);
     margin-top: 170px;
     font-family: ziti;
     font-size: 30px；
@@ -32,7 +34,7 @@ input{
     border-radius: 30px;
     text-align: center;
     font-family: ziti;
-    font-size: 20px;
+    font-size: 15px;
     height: 26px;
 }
 
