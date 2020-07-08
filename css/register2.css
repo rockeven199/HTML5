@@ -1,0 +1,12 @@
+/*CSS Documet*/
+
+/* input元素定义 */
+input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    line-height: 30px;
+    border-bottom: solid 1px #000000;
+    border: solid 2px #000000;
+}

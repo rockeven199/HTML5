@@ -1,33 +1,34 @@
 /*CSS document*/
-@font-face{
-    font-family:ziti;
+@font-face {
+    font-family: ziti;
     src: url(/font/新叶恋体-100font.com/新叶念体.otf);
 }
 
 /*主背景设置*/
-body{
-    background: -webkit-linear-gradient(left,#FA8BFF,#2BD2FF,#2BFF88);
-    background: -moz-linear-gradient(left,#FA8BFF,#2BD2FF,#2BFF88);
-    background: -o-linear-gradient(left,#FA8BFF,#2BD2FF,#2BFF88);
+body {
+    background: -webkit-linear-gradient(left, #FA8BFF, #2BD2FF, #2BFF88);
+    background: -moz-linear-gradient(left, #FA8BFF, #2BD2FF, #2BFF88);
+    background: -o-linear-gradient(left, #FA8BFF, #2BD2FF, #2BFF88);
     margin-top: 170px;
     font-family: ziti;
     font-size: 30px；
 }
 
 /*表单样式更改*/
-form{
+
+form {
     margin-top: 100px;
     border: none;
     outline: none;
 }
 
-form:first-child{
+form:first-child {
     font-family: none;
     font-size: 25px;
 }
 
 /*单输入框样式更改*/
-input{
+input {
     outline: none;
     box-shadow: 3px 6px 3px;
     border: 1.5px solid #ffffff;
@@ -39,14 +40,15 @@ input{
 }
 
 /*input必填和非必填提示*/
-input:read-only{
+input:read-only {
     background-color: #C3C7C0;
 }
+
 /*表单项输入验证*/
-input:valid{
+input:valid {
     background-color: #88FF88;
 }
 
-input:invalid{
+input:invalid {
     background-color: #FF9999;
 }
