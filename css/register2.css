@@ -1,12 +1,30 @@
 /*CSS Documet*/
+/* 背景颜色 */
+body {
+  background-color: #be00ee;
+}
 
 /* input元素定义 */
 input {
-    border-left: none;
-    border-top: none;
-    border-right: none;
-    outline: none;
-    line-height: 30px;
-    border-bottom: solid 1px #000000;
-    border: solid 2px #000000;
+  display: block;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border: #c266ff solid 1.5px;
+  border-radius: 5px 5px;
+  outline: none;
+  line-height: 20px;
+  border-bottom: solid 1.5px #000000;
+  background-color: rgba(102, 224, 255, 0.8);
+}
+
+/* margin调整 */
+div > form {
+  margin-top: 3cm;
+}
+
+/* 提交按钮样式配置 */
+input:last-child {
+  border-radius: 7px;
+  border: 2px solid #ffffff;
 }

@@ -11,20 +11,25 @@
 <body>
   <div align="center">
     <form action="9.php">
-      <input placeholder="用户名" id="username" name="username[]" type="text" title="长度11个字符" pattern="[A-z,1-9]{11}"
-        required />
-      <br />
-      <input placeholder="密码" id="passwd" name="passwd[]" type="password" title="长度11个字符，范围:A-z,1-9"
-        pattern="[A-z,1-9]{11}" required />
-      <br />
-      <input placeholder="请再次输入密码" id="reinputpasswd" name="repinputpasswd[]" type="password" title="请重复之前输入的密码"
-        required />
-      <br />
-      <input placeholder="请输入邮箱" id="email" name="email[]" type="email" title="请输入电子邮箱" required />
-      <br />
-      <input placeholder="请输入电话号码（选填）" id="tel" name="tel[]" type="tel" title="请输入电话号码" />
-      <br />
-      <input placeholder="提交" type="submit" />
+      <div>
+        <legend>注册</legend>
+      </div>
+      <div style="border-radius: 20px;">
+        <input placeholder="用户名" id="username" name="username[]" type="text" title="长度11个字符" pattern="[A-z,1-9]{11}"
+          required />
+        <br />
+        <input placeholder="密码" id="passwd" name="passwd[]" type="password" title="长度11个字符，范围:A-z,1-9"
+          pattern="[A-z,1-9]{11}" required />
+        <br />
+        <input placeholder="请再次输入密码" id="reinputpasswd" name="repinputpasswd[]" type="password" title="请重复之前输入的密码"
+          required />
+        <br />
+        <input placeholder="请输入邮箱" id="email" name="email[]" type="email" title="请输入电子邮箱" required />
+        <br />
+        <input placeholder="请输入电话号码（选填）" id="tel" name="tel[]" type="tel" title="请输入电话号码" />
+        <br />
+        <input placeholder="提交" type="submit" />
+      </div>
     </form>
   </div>
 </body>
