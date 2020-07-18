@@ -1,54 +1,54 @@
 /*CSS document*/
 @font-face {
-    font-family: ziti;
-    src: url(/font/新叶恋体-100font.com/新叶念体.otf);
+  font-family: ziti;
+  src: url(/font/新叶恋体-100font.com/新叶念体.otf);
 }
 
 /*主背景设置*/
 body {
-    background: -webkit-linear-gradient(left, #FA8BFF, #2BD2FF, #2BFF88);
-    background: -moz-linear-gradient(left, #FA8BFF, #2BD2FF, #2BFF88);
-    background: -o-linear-gradient(left, #FA8BFF, #2BD2FF, #2BFF88);
-    margin-top: 170px;
-    font-family: ziti;
-    font-size: 30px；
+  background: -webkit-linear-gradient(left, #fa8bff, #2bd2ff, #2bff88);
+  background: -moz-linear-gradient(left, #fa8bff, #2bd2ff, #2bff88);
+  background: -o-linear-gradient(left, #fa8bff, #2bd2ff, #2bff88);
+  margin-top: 170px;
+  font-family: ziti;
+  font-size: 30px；;
 }
 
 /*表单样式更改*/
 
 form {
-    margin-top: 100px;
-    border: none;
-    outline: none;
+  margin-top: 100px;
+  border: none;
+  outline: none;
 }
 
 form:first-child {
-    font-family: none;
-    font-size: 25px;
+  font-family: none;
+  font-size: 25px;
 }
 
 /*单输入框样式更改*/
 input {
-    outline: none;
-    box-shadow: 3px 6px 3px;
-    border: 1.5px solid #ffffff;
-    border-radius: 30px;
-    text-align: center;
-    font-family: ziti;
-    font-size: 15px;
-    height: 26px;
+  outline: none;
+  box-shadow: 3px 6px 3px;
+  border: 1.5px solid #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: ziti;
+  font-size: 15px;
+  height: 26px;
 }
 
 /*input必填和非必填提示*/
 input:read-only {
-    background-color: #C3C7C0;
+  background-color: #c3c7c0;
 }
 
 /*表单项输入验证*/
 input:valid {
-    background-color: #88FF88;
+  background-color: #88ff88;
 }
 
 input:invalid {
-    background-color: #FF9999;
+  background-color: #ff9999;
 }
