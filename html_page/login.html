@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link type="text/css" rel="stylesheet" href="/css/login.css">
+</head>
+
+<body class="background">
+    <div align="center" class="form_style">
+        <form action="/php/houtai.php" method="POST">
+
+            <div style="width: 30%;">
+                <legend
+                    style="border: 1px white solid; font-size: 30px; background-color: #ffec8f;border-radius: 17px; width: 25%;margin-bottom: 20px;">
+                    登录</legend>
+            </div>
+
+            <input type=" text" name="user" id="user" placeholder="请输入用户名"
+                style="border: white 1px solid;border-radius: 15px; height: 20px;width: 200px; margin-bottom: 10px;"
+                required>
+            <br>
+            <input type="password" required name="password" id="password" placeholder="请输入密码"
+                style="border: white 1px solid;margin-bottom: 10px; border-radius: 15px;height: 20px;width: 200px; margin-bottom: 10px;"></input>
+            <br>
+            <input type="submit" value="登录" required
+                style="border-radius: 8px; padding: 2px 20px 2px 20px;border: 1px white solid;">
+            <a href="sign up.html"><button type="button" value="还没注册？点我注册"
+                    style="border: 1px solid white;border-radius: 8px;font-size: 9px; padding: 3px 5px 3px 5px; background-color: #a182f7;">没有账号？点我注册</button></a>
+        </form>
+    </div>
+</body>
+
+</html>

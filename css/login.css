@@ -1,0 +1,24 @@
+/* Css Document */
+@font-face {
+    font-family: body;
+    src: url(/font/新叶恋体-100font.com/新叶念体.otf);
+}
+
+/* 背景样式设置 */
+.background {
+    position: relative;
+    background-image: url(/images/u=3636029559\,3602409984&fm=26&gp=0.jpg);
+    background-size: 100%;
+}
+
+/* 表单样式设置 */
+.form_style {
+    font-family: body;
+    margin-top: 15%;
+}
+
+input {
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    background-color: #a182f7;
+}

@@ -1,23 +1,48 @@
-/* CSS Document */
+/* 全局设置 */
 @font-face {
-	font-family: 清松手写体1;
-	src: url(/font/清松手写体-100font.com/清松手写体1.ttf)
+  font-family: nav;
+  src: url(/font/新叶恋体-100font.com/新叶念体.otf);
 }
-
+@font-face {
+  font-family: mingzi;
+  src: url(/font/胡晓波骚包体-100font.com/胡晓波骚包体.otf);
+}
 body {
-	background-color: white;
+  background-color: #f7e9e3;
 }
-
-div {
-	text-align: center;
-	text-decoration: none;
+/* 导航栏 */
+a:hover {
+  background-color: rgba(149, 225, 211, 0.35);
 }
-
-h3 {
-	font-family: 清松手写体1;
-	font-size: 30px;
+a:active {
+  background-color: #3f72af;
 }
-
-.a {
-	text-decoration: none;
+a {
+  float: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 40%;
+  display: block;
+  background-color: rgba(234, 255, 208, 0.8);
+  font-family: nav;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 15px;
+  border-radius: 6.7px;
+  box-shadow: 6px 7px #bcee65;
+  color: black;
+  border: 3px solid whitesmoke;
+}
+.nav {
+  margin-top: 4%;
+}
+/* 头像设置 */
+.headimg {
+  margin-top: 3%;
+}
+/* 名字设置 */
+.mingzi {
+  font-family: mingzi;
+  font-size: 60px;
+  color: #45eba5;
 }

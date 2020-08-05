@@ -1,0 +1,82 @@
+/*CSS document*/
+/*网页主体设置*/
+/*服务器字体设置*/
+@font-face {
+  font-family: ziti;
+  src: url(/font/新叶恋体-100font.com/新叶念体.otf);
+}
+
+/*主背景设置*/
+body {
+  background: -webkit-linear-gradient(left, #ffaaa5, #ffd3b6, #fdffab, #a8e6cf);
+  background: -moz-linear-gradient(left, #ffaaa5, #ffd3b6, #fdffab, #a8e6cf);
+  background: -o-linear-gradient(left, #ffaaa5, #ffd3b6, #fdffab, #a8e6cf);
+  margin-top: 170px;
+  font-family: ziti;
+  font-size: 30px;
+}
+
+/*整体表单样式更改*/
+
+form {
+  margin-top: 100px;
+  border: none;
+  outline: none;
+}
+
+form:first-child {
+  font-family: none;
+  font-size: 25px;
+}
+
+/*单输入框样式更改*/
+input {
+  outline: none;
+  transition: all 1s;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: ziti;
+  font-size: 15px;
+  height: 26px;
+}
+
+/*提交按钮样式设置*/
+button {
+  border-radius: 10px;
+  border: 2px white solid;
+  transition: all 0.65s;
+}
+
+/*表单项输入验证*/
+input:valid {
+  background-color: #88ff88;
+}
+
+input:invalid {
+  background-color: #ff9999;
+}
+
+/*动画样式设置*/
+/*input部分*/
+input:hover {
+  position: relative;
+  transition: all 0.65s;
+  box-shadow: 0px 0px 6px;
+  padding: 2% 1%;
+}
+
+input:focus {
+  position: relative;
+  border-radius: 0px;
+  padding: 3% 1%;
+  text-align: left;
+  transition: all 0.65s;
+  box-shadow: 0px 0px 6px green;
+}
+
+/*button部分*/
+button:hover {
+  padding: 2px 5px 2px 5px;
+  box-shadow: 0px 0px 6px;
+}
