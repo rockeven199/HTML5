@@ -1,23 +1,44 @@
 /* CSS Document */
+
+
+/* 导航栏 */
 @font-face {
-	font-family: 清松手写体1;
-	src: url(/font/清松手写体-100font.com/清松手写体1.ttf)
+  font-family: nav;
+  src: url(/font/新叶恋体-100font.com/新叶念体.otf);
 }
 
-body {
-	background-color: white;
+a:link {
+  background: lightgreen;
 }
 
-div {
-	text-align: center;
-	text-decoration: none;
+a:visited {
+  background: lightgoldenrodyellow
 }
 
-h3 {
-	font-family: 清松手写体1;
-	font-size: 30px;
+a:hover {
+  background-color: grey;
 }
 
-.a {
-	text-decoration: none;
+a:active {
+  background: lightseagreen;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+  display: block;
+  box-shadow: none 10px grey;
+  font-size: 35px;
+  font-family: nav;
+  width: 250px;
+  border-bottom: 1pxsolid #000000;
+}
+
+.nav {
+  margin-top: 13%;
+}
+
+/* 头像设置 */
+.touxiang {
+  margin-top: 2%;
 }
