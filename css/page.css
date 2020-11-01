@@ -5,57 +5,53 @@
 
 /* 导航栏 */
 @font-face {
-  font-family: nav {
-    src: url(/font/新叶恋体-100font.com/新叶念体.otf);
-  }
+  font-family: src: url(/font/新叶恋体-100font.com/新叶念体.otf);
+}
 
-  @font-face {
-    font-family: mingzi;
-    src: url(/font/胡晓波骚包体-100font.com/胡晓波骚包体.otf);
-  }
 
-  body {
-    background-color: #f7e9e3;
-  }
 
-  /* 导航栏 */
-  a:hover {
-    background-color: rgba(149, 225, 211, 0.35);
-  }
+body {
+  background-color: #f7e9e3;
+}
 
-  a:active {
-    background-color: #3f72af;
-  }
+/* 导航栏 */
+a:hover {
+  background-color: rgba(149, 225, 211, 0.35);
+}
 
-  a {
-    float: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 40%;
-    display: block;
-    background-color: rgba(234, 255, 208, 0.8);
-    font-family: nav;
-    font-size: 25px;
-    text-decoration: none;
-    margin: 15px;
-    border-radius: 6.7px;
-    box-shadow: 6px 7px #bcee65;
-    color: black;
-    border: 3px solid whitesmoke;
-  }
+a:active {
+  background-color: #3f72af;
+}
 
-  .nav {
-    margin-top: 4%;
-  }
+a {
+  float: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 40%;
+  display: block;
+  background-color: rgba(234, 255, 208, 0.8);
+  font-family: nav;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 15px;
+  border-radius: 6.7px;
+  box-shadow: 6px 7px #bcee65;
+  color: black;
+  border: 3px solid whitesmoke;
+}
 
-  /* 头像设置 */
-  .headimg {
-    margin-top: 3%;
-  }
+.nav {
+  margin-top: 4%;
+}
 
-  /* 名字设置 */
-  .mingzi {
-    font-family: mingzi;
-    font-size: 60px;
-    color: #45eba5;
-  }
+/* 头像设置 */
+.headimg {
+  margin-top: 3%;
+}
+
+/* 名字设置 */
+.mingzi {
+  font-family: mingzi;
+  font-size: 60px;
+  color: #45eba5;
+}
